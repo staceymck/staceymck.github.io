@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+header {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid $gray-light;
+  background-color: #fff;
+
+  ul {
+    line-height: initial;
+  }
+}
+
+.LogoBlock {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  height: 26px;
+}
+
+.ThemeSelector {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.Wrapper {
+  padding: 1.25rem 2rem;
+  text-transform: uppercase;
+}
+
+.Hamburger {
+  position: absolute;
+  top: 1.25rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 5;
+}
+
+// Large screen styles
+@include large-screens {
+  .Wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $width-main;
+    margin: 0 auto;
+  }
+
+  .Hamburger {
+    display: none;
+  }
+}
