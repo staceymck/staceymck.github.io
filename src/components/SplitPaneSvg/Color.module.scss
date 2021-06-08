@@ -1,0 +1,27 @@
+.Cls1, .Cls5 {
+  fill: #fff;
+}
+.Cls1, .Cls2, .Cls3, .Cls5, .Cls6 {
+  stroke: #231f20;
+  stroke-width: 0.25px;
+}
+
+.Cls1, .Cls2 {
+  stroke-miterlimit: 10;
+}
+
+.Cls2 {
+  fill: var(--secondary-color);
+} 
+
+.Cls3 {
+  fill: var(--primary-color);
+}
+
+.Cls5, .Cls6 {
+  stroke-linejoin: round;
+}
+
+.Cls6 {
+  fill: var(--primary-color-dark);
+}
