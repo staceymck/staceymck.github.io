@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.Option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  margin: .35rem;
+  padding: initial;
+  
+  &:hover {
+    border: 3px solid #fff;
+  }
+}
+
+.purple {
+  background-color: #6525CC;
+}
+
+.orange {
+   background-color: #FF7033;
+}
+ 
+.teal {
+  background-color: #1898A0;
+}
