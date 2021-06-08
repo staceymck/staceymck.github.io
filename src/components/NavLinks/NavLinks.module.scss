@@ -24,14 +24,14 @@ a:hover {
 }
 
 @include large-screens {
-  .NavItems {
+  .NavLinks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-top: initial;
   }
 
-  .NavItem {
+  .NavLink {
     margin: 0 0 0 2rem;
   }
 }
