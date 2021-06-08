@@ -1,10 +1,15 @@
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
+import './styles/_color-themes.scss';
+import Navbar from './components/Navbar/Navbar';
 
-function App() {
+const App = () => {
+
+  const [theme, setTheme] = useState('Purple')
+
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
+    <div className={theme}>
+      <Navbar/>
     </div>
   );
 }
