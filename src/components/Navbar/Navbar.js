@@ -10,7 +10,6 @@ const Navbar = () => {
   const ref = useRef()
 
   useEffect(() => {
-    console.log(ref)
     const checkIfOutsideClick = e => {
       if (open && ref.current && !ref.current.contains(e.target)) {
         setOpen(false)
