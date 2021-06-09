@@ -1,0 +1,20 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.CardWrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: $width-main;
+  // min-height: calc(100vh - 70px);
+  margin: 1rem;
+  // padding-bottom: 2rem; //maybe add more
+}
+
+@include medium-screens {
+  .CardWrapper {
+    flex-direction: row;
+  }
+}
