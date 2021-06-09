@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.ProjectCard {
+  flex: 1;
+  margin: .5rem;
+  padding: 1.25rem 1.25rem .5rem 1.25rem;
+  background-color: #fff;
+  border: 2px solid $gray-light;
+}
+
+.Img {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.Text {
+  padding: .75rem 0 .5rem 0;
+
+  h1 {
+    font-size: 1.563rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
+
+.Border {
+  height: 2px;
+  background-color: var(--secondary-color);
+  width: 100%;
+  margin-top: .5rem;
+}
+
+@include medium-screens {
+  .ProjectCard {
+    min-height: 175px;
+  }
+
+  .Text {
+    h1 {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
