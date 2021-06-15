@@ -7,11 +7,9 @@ const LinkButton = ({text, type, wide, link}) => {
   const classNames = classnames(styles.Button, {[styles[type]]: type, [styles.Wide]: wide})
 
   return (
-    <div className="test">
-      <a className={classNames} href={link}>
-         {text}
-      </a>
-    </div>
+    <a className={classNames} href={link}>
+        {text}
+    </a>
   )
 }
 
