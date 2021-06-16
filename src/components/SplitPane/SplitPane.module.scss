@@ -4,28 +4,28 @@
 .SplitPane {
   max-width: $width-main;
   min-height: calc(100vh - 70px);
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-  // flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
 .SplitPaneImg {
-  // flex: 1;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
 
   svg {
-    width: 90%;
+    width: 100%;
   }
 }
 
 .SplitPaneText {
-  // flex: 1;
+  flex: 1;
   padding: 1rem;
   margin: 0 auto;
 
@@ -47,7 +47,7 @@
 
   .SplitPaneImg {
     svg {
-      width: 60%;
+      width: 100%;
     }
   }
 }
