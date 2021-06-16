@@ -1,3 +1,9 @@
+@import '../../styles/mixins';
+
+.Hide {
+  display: none;
+}
+
 .Pattern {
   width: 70%;
 }
@@ -28,6 +34,11 @@
   stroke-width: 0
 }
 
+@include large-screens {
+  .Hide {
+    display: flex;
+  }
+}
 // Pattern 2 styles
 // .Cls1 {
 //   fill: var(--secondary-color);
