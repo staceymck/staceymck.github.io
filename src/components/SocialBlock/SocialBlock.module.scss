@@ -1,0 +1,17 @@
+
+.SocialBlock {
+  margin-top: .5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 500;
+
+  i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+}
+
+.SocialBlock > a {
+  margin-left: .75rem;
+}
