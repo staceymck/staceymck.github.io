@@ -1,16 +1,13 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
 
-const ProjectCard = ({imgFile, alt, name, tech}) => {
-
-  const img = require(`../../assets/${imgFile}`).default
+const ProjectCard = ({img, alt, name, tech}) => {
 
   return (
     <div className={styles.ProjectCard}>
       <div className={styles.Img}>
-        <img src={img} alt={alt} />
+        {img}
       </div>
-      <div className={styles.Border}></div>
       <div className={styles.Text}>
         <h1>{name}</h1>
         <h2>{tech}</h2>
