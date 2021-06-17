@@ -1,13 +1,15 @@
-.Cls1, .Cls2 {
-  fill: #b186f9;
-}
+@import '../../styles/variables';
 
 .Cls1 {
-  opacity: 0.1;
+  fill: $gray-light;
+}
+
+.Cls2 {
+  fill: var(--secondary-color);
 }
 
 .Cls3 {
-  fill: #6525cc; 
+  fill: var(--primary-color);
 }
 
 .Cls4 {
@@ -16,7 +18,7 @@
 
 .Cls5, .Cls6 {
   fill: none;
-  stroke: #b186f9;
+  stroke: var(--secondary-color);
   stroke-miterlimit: 10;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .Cls7 {
-  fill: #391573;
+  fill: var(--primary-color-dark);
 }
 
 .Cls8 {
