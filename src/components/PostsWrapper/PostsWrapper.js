@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FlexList.module.scss';
+import styles from './PostsWrapper.module.scss';
 
 const FlexList = ({children}) => {
   return (
