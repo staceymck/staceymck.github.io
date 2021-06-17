@@ -1,8 +1,11 @@
 @import '../../styles/variables';
 
 .FlexList {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+  padding: 2rem 2rem 0 2rem;
   max-width: $width-text;
+  margin: 0 auto;
+}
+
+.FlexList div:last-of-type {
+  margin-bottom: 2rem;
 }
