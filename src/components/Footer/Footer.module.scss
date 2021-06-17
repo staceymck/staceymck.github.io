@@ -17,12 +17,15 @@
 
   i {
     color: var(--secondary-color);
-    padding: .5rem;
     font-size: 1.5rem;
   }
 
   .IconBlock {
     padding-top: 1rem;
     text-align: right;
+  }
+
+  .IconBlock > * {
+    margin: .5rem;
   }
 }
