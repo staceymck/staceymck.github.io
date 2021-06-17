@@ -1,0 +1,65 @@
+@import '../../styles/mixins';
+
+.Hide {
+  display: none;
+}
+
+.Pattern {
+  width: 70%;
+}
+
+.Cls1,.Cls4,.Cls5 {
+  fill:#fff;
+}
+.Cls1,.Cls3,.Cls4,.Cls6 {
+  stroke: var(--secondary-color);
+  stroke-miterlimit:10;
+}
+.Cls1 {
+  stroke-width:2px;
+}
+.Cls2 {
+  fill: var(--secondary-color);
+}
+.Cls3,.Cls6 {
+  fill:none;
+}
+.Cls3,.Cls4 {
+  stroke-width:4px;
+}
+.Cls6 {
+  stroke-width:6px;
+}
+.Cls5 {
+  stroke-width: 0
+}
+
+@include large-screens {
+  .Hide {
+    display: flex;
+  }
+}
+// Pattern 2 styles
+// .Cls1 {
+//   fill: var(--secondary-color);
+// }
+// .Cls2 {
+//   fill: var(--primary-color);
+// }
+// .Cls3,.Cls4,.Cls5 {
+//   fill:none;
+//   stroke-miterlimit:10;
+// }
+// .Cls3,.Cls5 {
+//   stroke: var(--secondary-color);
+// }
+// .Cls3 {
+//   stroke-width:2px;
+// }
+// .Cls4 {
+//   stroke: var(--primary-color);
+//   stroke-width:4px;
+// }
+// .Cls5 {
+//   stroke-width:6px;
+// }
