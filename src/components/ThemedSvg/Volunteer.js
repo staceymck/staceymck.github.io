@@ -4,6 +4,7 @@ import styles from './Volunteer.module.scss';
 const Volunteer = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96">
+      <title>Low-fi mockup of a volunteer profile page, which includes a volunteer avatar image</title>
       <rect className={styles.Cls1} x="4.07" y="3.98" width="407" height="407"/>
       <rect className={styles.Cls2} x="34.99" y="81.66" width="345.16" height="251.63" rx="16.76"/>
       <path className={styles.Cls3} d="M380.15,96.56c0-8.23-6.16-14.9-13.77-14.9H48.76c-7.6,0-13.77,6.67-13.77,14.9v5.62H380.15Z"/>
