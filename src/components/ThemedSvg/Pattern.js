@@ -4,10 +4,11 @@ import classnames from 'classnames';
 
 const Pattern = ({hideOnSmallMedScreens}) => {
 
-  const classNames = classnames({[styles.Hide]: hideOnSmallMedScreens}) 
+  // const classNames = classnames({[styles.Hide]: hideOnSmallMedScreens}) 
 
   return (
-    <svg className={classNames} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400">
+      <title>Interwoven organic shapes and circles</title>
       <ellipse className={styles.Cls1} cx="251.85" cy="204.28" rx="8.73" ry="8.51" transform="matrix(0.81, -0.59, 0.59, 0.81, -71.96, 186.8)"/>
       <path className={styles.Cls2} d="M27.08,312.16c10.83,40.74,53,60.24,69.72,68,12.88,5.95,70.13,32.42,119.21,5.67,33.15-18.06,42.82-49.64,45.15-58.61,3.33-12.85,9.42-47.94-15.17-79.38-17.42-22.26-43.91-34.65-64.26-37-7.13-.82-15.75-1.73-25,1.78-12.24,4.64-15.33,14.91-41.28,19-36,5.71-46-5.9-63.7,3.45C27.45,247.94,19.65,284.19,27.08,312.16Z"/>
       <circle className={styles.Cls3} cx="291.96" cy="174.33" r="35.62"/>
