@@ -6,7 +6,22 @@
   margin: .5rem;
   padding: 1.25rem 1.25rem .5rem 1.25rem;
   width: 80%;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
+
+// .Divider {
+//   display: none;
+//   height: 2px;
+//   margin: .5rem .2rem;
+//   background-color: lightgray;
+// }
 
 .Img {
   display: flex;
@@ -42,17 +57,17 @@
 }
 
 @include medium-screens {
-  // .ProjectCard {
-  //   min-height: 175px;
-  // }
+  .ProjectCard {
+    min-height: 175px;
+  }
 
-  // .Text {
-  //   h1 {
-  //     font-size: 1.25rem;
-  //   }
+  .Text {
+    h1 {
+      font-size: 2rem;
+    }
 
-  //   h2 {
-  //     font-size: 1rem;
-  //   }
-  // }
+    h2 {
+      font-size: 1rem;
+    }
+  }
 }
