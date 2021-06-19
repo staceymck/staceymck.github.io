@@ -1,0 +1,43 @@
+.Cls1 {
+  fill: var(--secondary-color);
+}
+
+.Cls2 {
+  fill: var(--primary-color);
+}
+
+.Cls3, .Cls4, .Cls5, .Cls8, .Cls9 {
+  fill:none;
+}
+
+.Cls3, .Cls5, .Cls6 {
+  stroke: var(--secondary-color);
+}
+
+.Cls3, .Cls4, .Cls5, .Cls6, .Cls8, .Cls9 {
+  stroke-miterlimit:10;
+}
+
+.Cls3, .Cls6, .Cls8 {
+  stroke-width: 2px;
+}
+
+.Cls4, .Cls9 {
+  stroke: var(--primary-color);
+}
+
+.Cls4 {
+  stroke-width: 4px;
+}
+
+.Cls5, .Cls9 {
+  stroke-width:6px;
+}
+
+.Cls6, .Cls7 {
+  fill:#fff;
+}
+
+.Cls8 {
+  stroke:#fff;
+}
