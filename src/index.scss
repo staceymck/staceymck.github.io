@@ -5,6 +5,10 @@ html {
   font-weight: 400;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -41,10 +45,14 @@ p, ul {
 
 h1 {
   // text-transform: uppercase;
-  font-size: 2.44rem;
+  font-size: 3.052rem;
   text-align: center; //center on small screens by default
 
-  @media (max-width: 330px) { //account for VolunteerLog on smallest screens
+  @media (max-width: 440px) { //account for VolunteerLog on smallest screens
+    font-size: 2.441rem;
+  }
+
+  @media (max-width: 340px) { //account for VolunteerLog on smallest screens
     font-size: 1.953rem;
   }
 }
