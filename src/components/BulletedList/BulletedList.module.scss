@@ -1,0 +1,12 @@
+.List li::before {
+  content: "\25A0";  
+  color: var(--primary-color);
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+}
+
+.List {
+  padding-left: 1.25rem;
+}
