@@ -3,7 +3,7 @@ import styles from './Zoo.module.scss';
 
 const Zoo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96" width="100%" height="100%">
       <title>Simple map based on the St. Louis zoo divided into 6 zones with an icon of an animal in each zone</title>
       <rect className={styles.Cls1} x="4.07" y="3.98" width="407" height="407"/>
       <path className={styles.Cls2} d="M71.61,282.45a87.63,87.63,0,0,0,43.65,1.76l53-13.25c.39-6.11.71-14.58,1-22.77s.62-16.62,1-22.73L144,219.72,90.59,189.13l-8.38-28.31-45.66-3.54L27.4,251.57A88.85,88.85,0,0,0,71.61,282.45Z"/>

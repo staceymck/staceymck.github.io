@@ -3,7 +3,7 @@ import styles from './Color.module.scss';
 
 const Color = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96" width="100%" height="100%">
       <title>Square composed of triangles, half-colored in with various shades of the same color.</title>
       <rect className={styles.Cls1} x="4.07" y="3.98" width="407" height="407"/>
       <polygon className={styles.Cls2} points="74.16 145.63 118.69 109.03 88.68 68.06 74.16 145.63"/>

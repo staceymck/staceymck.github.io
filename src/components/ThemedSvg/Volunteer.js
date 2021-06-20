@@ -3,7 +3,7 @@ import styles from './Volunteer.module.scss';
 
 const Volunteer = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.14 414.96" width="100%" height="100%">
       <title>Low-fi mockup of a volunteer profile page, which includes a volunteer avatar image</title>
       <rect className={styles.Cls1} x="4.07" y="3.98" width="407" height="407"/>
       <rect className={styles.Cls2} x="34.99" y="81.66" width="345.16" height="251.63" rx="16.76"/>
