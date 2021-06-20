@@ -1,31 +1,26 @@
+@import '../../styles/variables';
+
 .Footer {
   background-color: var(--primary-color);
+  transition: 0.3s linear;
   color: #fff;
-  padding: 3rem 2rem 2rem 2rem;
-  text-align: center;
-
-  h1, h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-
-  p {
-    font-weight: 500;
-    max-width: 400px;
-    margin: 1rem auto 0 auto;
-  }
+  padding: 2rem 0;
+  text-align: right;
 
   i {
     color: var(--secondary-color);
-    font-size: 1.5rem;
+    transition: 0.3s linear;
+    font-size: 2rem;
   }
+}
 
-  .IconBlock {
-    padding-top: 1rem;
-    text-align: right;
-  }
+.IconBlock {
+  max-width: $width-main;
+  margin: 0 auto;
+  text-align: right;
+  padding: 0 2rem;
+}
 
-  .IconBlock > * {
-    margin: .5rem;
-  }
+.IconBlock > * {
+  margin-left: 1rem;
 }
