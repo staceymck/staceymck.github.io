@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import NavLinks from '../NavLinks/NavLinks';
 import styles from './Navbar.module.scss';
 
-const Navbar = () => {
+const Navbar = ({onClick}) => {
   const [open, setOpen] = useState(false)
   
   const ref = useRef()
@@ -27,11 +27,13 @@ const Navbar = () => {
     <header ref={ref}>
       <div className={styles.Wrapper}>
         <div className={styles.LogoBlock}>
-          <img className={styles.Logo} src={logo} alt="Letters S M"/>
+          <a href="/">
+            <img className={styles.Logo} src={logo} alt="Letters S M"/>
+          </a>
           <div className={styles.ThemeSelector}>
-            <ThemeOption color="purple"/>
-            <ThemeOption color="orange"/>
-            <ThemeOption color="teal"/>
+            <ThemeOption onClick={onClick} color="Purple"/>
+            <ThemeOption onClick={onClick} color="Orange"/>
+            <ThemeOption onClick={onClick} color="Teal"/>
           </div>
         </div>
 
