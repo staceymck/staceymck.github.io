@@ -1,8 +1,10 @@
 
+@import '../../styles/mixins';
+
 .SocialBlock {
   margin-top: .5rem;
-  text-align: center;
   font-size: 1.25rem;
+  text-align: center;
   color: var(--primary-color);
   font-weight: 500;
 
@@ -14,4 +16,10 @@
 
 .SocialBlock > a {
   margin-left: .75rem;
+}
+
+@include large-screens {
+  .SocialBlock {
+    text-align: left;
+  }
 }
