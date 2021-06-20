@@ -1,5 +1,6 @@
 
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .SocialBlock {
   margin-top: .5rem;
@@ -7,9 +8,11 @@
   text-align: center;
   color: var(--primary-color);
   font-weight: 500;
+  transition: $color-transition;
 
   i {
     color: var(--primary-color);
+    transition: $color-transition;
     font-size: 1.25rem;
   }
 }

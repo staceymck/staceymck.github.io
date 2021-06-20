@@ -1,5 +1,9 @@
 @import '../../styles/variables';
 
+.Cls1, .Cls2, .Cls3, .Cls4 {
+  transition: $color-transition;
+}
+
 .Cls1 {
   fill: $gray-light;
 }

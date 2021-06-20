@@ -1,3 +1,9 @@
+@import '../../styles/variables';
+
+.Cls1, .Cls2, .Cls3, .Cls4, .Cls5, .Cls6, .Cls7, .Cls8, .Cls9 {
+  transition: $color-transition;
+}
+
 .Cls1 {
   fill: var(--secondary-color);
 }

@@ -1,5 +1,9 @@
 @import '../../styles/variables';
 
+.Cls1, .Cls2, .Cls3, .Cls4, .Cls5, .Cls6, .Cls7 {
+  transition: $color-transition;
+}
+
 .Cls1 {
   fill: $gray-light;
 } 
@@ -24,10 +28,6 @@
 .Cls4{
   fill: var(--primary-color);
 }
-
-// .Cls5 {
-//   fill: #231f20;
-// }
 
 .Cls6, .Cls7 {
   stroke-linejoin: round;
