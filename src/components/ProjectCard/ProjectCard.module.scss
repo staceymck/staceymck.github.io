@@ -1,5 +1,4 @@
 @import '../../styles/variables';
-@import '../../styles/mixins';
 
 .ProjectCard {
   flex: 1;
@@ -9,59 +8,44 @@
 
   &:hover {
     transform: scale(0.98);
+    cursor: pointer;
   }
 
-  a:hover {
-    text-decoration: none;
+  h1 {
+    font-size: 1.563rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.25rem;
   }
 }
-
-// .Divider {
-//   display: none;
-//   height: 2px;
-//   margin: .5rem .2rem;
-//   background-color: lightgray;
-// }
 
 .Img {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-
-  img {
-    width: 100%;
-  }
 }
 
 .Text {
   padding: .75rem 0 .5rem 0;
-
-  h1 {
-    font-size: 1.563rem;
-    font-weight: 600;
-    // text-align: left;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    // text-align: left;
-  }
 }
 
-.Border {
-  height: 2px;
-  background-color: var(--secondary-color);
-  width: 100%;
-  margin-top: .5rem;
-}
-
-@include medium-screens {
+@media (min-width: 640px) {
   .ProjectCard {
-    min-height: 175px;
-  }
+    h1 {
+      font-size: 1.25rem; 
+    }
 
-  .Text {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .ProjectCard {
     h1 {
       font-size: 2rem;
     }
