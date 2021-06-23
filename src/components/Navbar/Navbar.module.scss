@@ -46,7 +46,6 @@ header {
   z-index: 5;
 }
 
-// Large screen styles
 @include large-screens {
   .Wrapper {
     display: flex;
