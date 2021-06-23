@@ -21,7 +21,7 @@
   margin-left: .75rem;
 }
 
-@include large-screens {
+@media (min-width: 1180px) {
   .SocialBlock {
     text-align: left;
   }
