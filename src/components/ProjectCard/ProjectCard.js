@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
 
-const ProjectCard = ({img, name, tech, onClick}) => {
+const ProjectCard = ({svgImg, title, tech, onClick}) => {
 
   return (
     <div className={styles.ProjectCard} onClick={onClick}>
         <div className={styles.Img}>
-          {img}
+          {svgImg}
         </div>
         <div className={styles.Text}>
-          <h1>{name}</h1>
+          <h1>{title}</h1>
           <h2>{tech}</h2>
         </div>
     </div>
