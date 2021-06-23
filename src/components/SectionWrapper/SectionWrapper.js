@@ -6,7 +6,7 @@ const SectionWrapper = ({content, grayBg, id}) => {
 
   const classNames = classnames(styles.SectionWrapper, {[styles.GrayBg]: grayBg})
   return (
-    <section tabindex="-1" id={id} className={classNames}>
+    <section id={id} className={classNames}>
       {content}
     </section>
   )
