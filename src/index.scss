@@ -14,8 +14,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  cursor: pointer;
+  color: initial;
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: var(--primary-color) solid underline;
+  -webkit-text-decoration: var(--primary-color) solid underline;
   -webkit-text-underline-position: under;
   text-underline-position: under;
   -webkit-text-underline-position: 10%;
@@ -62,10 +69,4 @@ h2 {
 
 h3 {
   font-weight: 500;
-}
-
-a {
-  cursor: pointer;
-  color: initial;
-  text-decoration: none;
 }
