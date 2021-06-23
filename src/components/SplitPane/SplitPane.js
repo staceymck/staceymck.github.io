@@ -1,8 +1,7 @@
 import React from 'react';
-import classnames from 'classnames';
 import styles from './SplitPane.module.scss';
 
-const SplitPane = ({left, right, reverse}) => {
+const SplitPane = ({left, right}) => {
   return (
       <div className={styles.SplitPane}>
         <div className={styles.SplitPaneImg}>

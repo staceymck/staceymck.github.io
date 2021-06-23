@@ -3,56 +3,30 @@
 
 .SplitPane {
   max-width: $width-main;
-  min-height: calc(80vh - 70px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 .SplitPaneImg {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-
-  svg {
-    width: 100%;
-  }
+  display: none;
 }
 
 .SplitPaneText {
   flex: 1;
   padding: 1rem;
   margin: 0 auto;
+  max-width: $width-text;
 
-  ul {
-    list-style: circle;
-    padding-left: 1.25rem;
-    margin-bottom: .25rem;
-  }
-
-  h3 {
-    margin-bottom: .5rem;
+  h2 {
+    text-align: left;
   }
 }
 
-@include medium-screens {
-  .SplitPaneText {
-    max-width: 80%;
-  }
-
-  .SplitPaneImg {
-    svg {
-      width: 100%;
-    }
-  }
-}
-
-@include large-screens {
+@media (min-width: 1180px) {
   .SplitPane {
     display: flex;
     align-items: center;
@@ -60,27 +34,21 @@
     flex-direction: row;
     padding: 0 2rem;
 
-    h1, h2 {
+    h1 {
       text-align: left;
     } 
   }
 
-  .Reverse {
-    flex-direction: row-reverse;
-  }
-
   .SplitPaneImg {
     flex: 1;
-    margin: 1rem;
-
-    svg {
-      width: 90%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
   }
 
   .SplitPaneText {
-    flex: 1;
+    flex: 2;
     margin: 1rem;
   }
-
 }
