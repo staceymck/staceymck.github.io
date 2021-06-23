@@ -7,18 +7,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
   overflow-x: hidden;
-  // min-height: calc(80vh - 70px);
-  // min-height: calc(100vh - 70px);
 
   &>* {
     margin: .5rem;
   }
 
-
   h1 {
-    // text-transform: uppercase;
     font-size: 2.44rem;
     padding-top: .5rem;
   }
@@ -47,10 +43,7 @@
 // Medium screens styles
 @media (min-width: 520px) {
   .Hero {
-    // padding: 8rem;
     padding: 4rem;
-    // padding: 1rem 4rem;
-    // min-height: calc(100vh - 70px);
     
     &>* {
       margin: 1rem;
@@ -77,31 +70,42 @@
     flex-direction: row;
     max-width: $width-main;
     margin: 0 auto;
+    padding: 6rem;
 
     &>* {
       margin: 0;
     }
 
     h1 {
-      line-height: 1.25;
+      line-height: 1.1;
       text-align: left;
       padding-bottom: 1rem;
+      font-size: 3.815rem;
     }
   
     h2 {
-      // font-size: 1.56rem;  
       text-align: left;  
       max-width: $width-text; 
     }
   } 
+
+  .Left {
+    flex: .75;
+  }
 
   svg {
     max-width: 100%;
   }
 }
 
-@media (min-width: 1150px) {
-  .Hero h1 {
-    font-size: 3.815rem;
-  }
+@media (min-width: 1200px) {
+  .Hero {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;  
+    }
+  }  
 }
