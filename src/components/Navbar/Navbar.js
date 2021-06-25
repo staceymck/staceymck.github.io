@@ -3,6 +3,7 @@ import ThemeOption from '../ThemeOption/ThemeOption';
 import logo from '../../assets/logo.png';
 import NavLinks from '../NavLinks/NavLinks';
 import styles from './Navbar.module.scss';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({onClick}) => {
   const [open, setOpen] = useState(false)
@@ -23,13 +24,22 @@ const Navbar = ({onClick}) => {
     }
   }, [open])
 
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header ref={ref}>
       <div className={styles.Wrapper}>
         <div className={styles.LogoBlock}>
-          <a href="/">
-            <img className={styles.Logo} src={logo} alt="Letters S M"/>
-          </a>
+          <img 
+            className={styles.Logo} 
+            src={logo} 
+            alt="Letters S M"
+            onClick={scrollToTop}
+            tabIndex="0"
+          />
           <div className={styles.ThemeSelector}>
             <ThemeOption onClick={onClick} color="Purple"/>
             <ThemeOption onClick={onClick} color="Orange"/>
@@ -39,7 +49,12 @@ const Navbar = ({onClick}) => {
 
         <NavLinks open={open} handleOpen={setOpen}/>
 
-        <span className={styles.Hamburger} onClick={() => setOpen(!open)} tabIndex="0" aria-label="Toggle navigation menu">
+        <span 
+          className={styles.Hamburger} 
+          onClick={() => setOpen(!open)} 
+          tabIndex="0" 
+          aria-label="Toggle navigation menu"
+        >
           <i className="fa fa-bars"></i>
         </span>
       </div>

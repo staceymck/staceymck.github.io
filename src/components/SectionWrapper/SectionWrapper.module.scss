@@ -1,21 +1,7 @@
-@import '../../styles/mixins';
-
 .SectionWrapper {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .GrayBg {
   background-color: #f7f8f8;
-}
-
-@include medium-screens {
-  .SectionWrapper {
-    padding: 4rem 0;
-  }
-}
-
-@include large-screens {
-  .SectionWrapper {
-    padding: 6rem 0;
-  }
 }
