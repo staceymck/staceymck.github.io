@@ -29,6 +29,13 @@ const Navbar = ({onClick}) => {
     scroll.scrollToTop();
   };
 
+  const handleKeyPress = (e) => {
+    console.log(e)
+    if (e.code === "Enter") {
+      setOpen(!open)
+    }
+  }
+
   return (
     <header ref={ref}>
       <div className={styles.Wrapper}>
@@ -54,6 +61,7 @@ const Navbar = ({onClick}) => {
           onClick={() => setOpen(!open)} 
           tabIndex="0" 
           aria-label="Toggle navigation menu"
+          onKeyPress={handleKeyPress}
         >
           <i className="fa fa-bars"></i>
         </span>
