@@ -15,7 +15,9 @@
   display: inline-block; 
   width: 1em; 
   margin-left: -1em;
-  padding-right: .25rem;
+    // padding-right: .25rem;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 @include medium-screens {
