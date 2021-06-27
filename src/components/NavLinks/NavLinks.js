@@ -12,7 +12,6 @@ const NavLinks = ({open, handleOpen}) => {
       <ul className={navLinksClassNames}>
         <li className={styles.NavLink} >
           <Link 
-            activeClass="active"
             to="about"
             spy={true}
             smooth={true}
@@ -26,7 +25,6 @@ const NavLinks = ({open, handleOpen}) => {
         </li>
         <li className={styles.NavLink} >
           <Link 
-            activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
@@ -40,7 +38,6 @@ const NavLinks = ({open, handleOpen}) => {
         </li>
         <li className={styles.NavLink}>
         <Link 
-            activeClass="active"
             to="posts"
             spy={true}
             smooth={true}
