@@ -1,6 +1,7 @@
 @import '../../styles/mixins';
 
 .TechList {
+  list-style: disc;
   column-count: 2;
   column-gap: 2rem;
   margin: 1rem auto 0 auto;
@@ -8,24 +9,38 @@
   padding-left: 1.25rem;
 }
 
-.TechList li::before {
-  content: "\25A0";  
-  color: var(--primary-color);
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
-  margin-left: -1em;
-    // padding-right: .25rem;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
 @include medium-screens {
   .TechList {
     column-count: 3;
   }
-
-  .TechList li::before {
-    padding-right: 0;
-  }
 }
+
+// .TechList {
+//   column-count: 2;
+//   column-gap: 2rem;
+//   margin: 1rem auto 0 auto;
+//   overflow: hidden;
+//   padding-left: 1.25rem;
+// }
+
+// .TechList li::before {
+//   content: "\25A0";  
+//   color: var(--primary-color);
+//   font-weight: bold; 
+//   display: inline-block; 
+//   width: 1em; 
+//   margin-left: -1em;
+//     // padding-right: .25rem;
+//   -webkit-text-size-adjust: none;
+//   text-size-adjust: none;
+// }
+
+// @include medium-screens {
+//   .TechList {
+//     column-count: 3;
+//   }
+
+//   .TechList li::before {
+//     padding-right: 0;
+//   }
+// }

@@ -1,24 +1,29 @@
 @import '../../styles/mixins';
 
-.List li::before {
-  content: "\25A0";  
-  color: var(--primary-color);
-  // font-weight: bold; 
-  display: inline-block; 
-  font-size: 16px;
-  margin-left: -1em;
-  margin-right: .5rem;
-  // padding-right: .25rem;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
 .List {
+  list-style: disc;
   padding-left: 1.25rem;
 }
 
-@include medium-screens {
-  .List li::before {
-    padding-right: 0;
-  }
-}
+// .List li::before {
+//   content: "\25A0";  
+//   color: var(--primary-color);
+//   // font-weight: bold; 
+//   display: inline-block; 
+//   font-size: 16px;
+//   margin-left: -1em;
+//   margin-right: .5rem;
+//   // padding-right: .25rem;
+//   -webkit-text-size-adjust: none;
+//   text-size-adjust: none;
+// }
+
+// .List {
+//   padding-left: 1.25rem;
+// }
+
+// @include medium-screens {
+//   .List li::before {
+//     padding-right: 0;
+//   }
+// }
