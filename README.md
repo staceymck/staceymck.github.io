@@ -2,7 +2,7 @@
 
 Welcome to my portfolio repo! I'm a nonprofit marketer turned fullstack developer. To kickstart my career transition, I completed five months of 50+ hrs a week of training in fullstack development through [Flatiron School](https://flatironschool.com/). This site showcases some of the apps I developed through the program along with technical blog posts I've written.
 
-You can visit the live site at https://staceymck.github.io/.
+You can visit the live site at [staceymcknight.com](http://staceymcknight.com/)
 
 ## Technology
 
