@@ -1,3 +1,7 @@
+@mixin project-svg-bg-square {
+  fill: #fff;
+}
+
 //Media queries
 @mixin small-screens {
   @media (max-width: 640px) {

@@ -1,12 +1,13 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .Cls1, .Cls2, .Cls3, .Cls4 {
   transition: $color-transition;
 }
 
 .Cls1 {
-  fill: $gray-light;
-}
+  @include project-svg-bg-square;
+} 
 
 .Cls5 {
   fill: var(--secondary-color);
