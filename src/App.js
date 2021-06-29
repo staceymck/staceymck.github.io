@@ -14,7 +14,6 @@ import Modal from './components/Modal/Modal';
 import Hero from './components/Hero/Hero';
 import SplitPane from './components/SplitPane/SplitPane';
 import SectionWrapper from './components/SectionWrapper/SectionWrapper';
-import TechList from './components/TechList/TechList';
 import SocialBlock from './components/SocialBlock/SocialBlock';
 import Pattern from './components/ThemedSvg/Pattern';
 import Color from './components/ThemedSvg/Color';
