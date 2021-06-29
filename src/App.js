@@ -90,6 +90,17 @@ const App = () => {
     }
   ]
 
+  const techSkills = [
+    "Ruby", 
+    "JavaScript",
+    "Ruby on Rails",
+    "React + Redux",
+    "CSS + Sass",
+    "Figma",
+    "Illustrator",
+    "InDesign"
+  ]
+
   const handleClick = theme => {
     setTheme(theme)
   }
@@ -130,7 +141,14 @@ const App = () => {
                   </p>
 
                   <h2>Technologies:</h2>
-                  <TechList />
+                  <BulletedList 
+                    listItems={
+                      techSkills.map((skill, i) => {
+                        return <li key={i}>{skill}</li>
+                      })
+                    }
+                    listStyle="Skill"
+                  />
                 </>
               }
             />
@@ -170,11 +188,14 @@ const App = () => {
             alt={activeProject.alt}
             description={activeProject.description}
             highlightsList={
-              <BulletedList>
-                {activeProject.techHighlights.map((highlight, i) => {
-                  return <li key={i}>{highlight}</li>
-                })}
-              </BulletedList>
+              <BulletedList 
+                listItems={
+                  activeProject.techHighlights.map((highlight, i) => {
+                    return <li key={i}>{highlight}</li>
+                  })
+                }
+                listStyle="Modal"
+              />
             }
             linkBlock={
               <LinkBlock>
