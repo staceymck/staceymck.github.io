@@ -12,19 +12,6 @@ const NavLinks = ({open, handleOpen}) => {
       <ul className={navLinksClassNames}>
         <li className={styles.NavLink} >
           <Link 
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-32}
-            onClick={() => handleOpen(false)}
-            tabIndex="0"
-          >
-            About
-          </Link>
-        </li>
-        <li className={styles.NavLink} >
-          <Link 
             to="projects"
             spy={true}
             smooth={true}
@@ -47,6 +34,19 @@ const NavLinks = ({open, handleOpen}) => {
             tabIndex="0"
           >
             Posts
+          </Link>
+        </li>
+        <li className={styles.NavLink} >
+          <Link 
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-32}
+            onClick={() => handleOpen(false)}
+            tabIndex="0"
+          >
+            About
           </Link>
         </li>
       </ul>

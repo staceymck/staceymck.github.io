@@ -94,7 +94,7 @@ const App = () => {
     "JavaScript",
     "Ruby on Rails",
     "React + Redux",
-    "CSS + Sass",
+    "CSS",
     "Figma",
     "Illustrator",
     "InDesign"
@@ -115,6 +115,100 @@ const App = () => {
       <div className="Spacer"></div>
       <main > 
         <Hero />
+
+        <SectionWrapper 
+          id="projects"
+          content={
+            <>
+              <h1>Projects</h1>
+              <CardWrapper>
+                {projects.map(project => {
+                  return (
+                    <ProjectCard
+                      onClick={() => handleModalVisibility(project.id)}
+                      title={project.title}
+                      tech={project.tech}
+                      svgImg={project.svgImg}
+                      key={project.id}
+                    />
+                  )
+                })}
+              </CardWrapper>
+            </>
+          }
+          grayBg={true}
+        />
+
+        {/* Project Modal */}
+        {modalVisibility && 
+          <Modal onModalClose={() => setModalVisibility(false)}> 
+            <ProjectPage 
+              title={activeProject.title}
+              tech={activeProject.tech}
+              img={activeProject.img}
+              alt={activeProject.alt}
+              description={activeProject.description}
+              highlightsList={
+                <BulletedList 
+                  listItems={
+                    activeProject.techHighlights.map((highlight, i) => {
+                      return <li key={i}>{highlight}</li>
+                    })
+                  }
+                  listStyle="Modal"
+                />
+              }
+              linkBlock={
+                <LinkBlock>
+                  {activeProject.links.map((link, i) => {
+                    return <LinkButton key={i} text={link.text} type="PrimaryInverse" link={link.link} />
+                  })}
+                </LinkBlock>
+              }
+            />
+          </Modal>
+        }
+
+        <SectionWrapper 
+          id="posts"
+          content={
+            <>
+              <h1>Featured Posts</h1>
+              <PostsWrapper>
+                <PostCard 
+                  title="4 tips for your first hackathon"
+                  teaser="Top takeaways from my first hackathon experience to help you make the most of yours"
+                  link="https://staceymck.medium.com/4-tips-for-your-first-hackathon-f9cbbc9c4096"
+                />
+                <PostCard 
+                  title="Customizing React Color’s Sketch Picker to display recently used colors"
+                  teaser="Learn how to utilize React state to create a palette-like experience for users working with a color picker"
+                  link="https://staceymck.medium.com/customizing-react-colors-sketch-picker-to-display-recently-used-colors-b1eb09724ed6"
+                />
+                <PostCard 
+                  title="Making an interactive SVG map with OO-JavaScript"
+                  teaser="Walk through the process and logic involved in triggering actions based on user interaction with an SVG in a vanilla JavaScript context"
+                  link="https://staceymck.medium.com/making-an-interactive-svg-map-with-oo-javascript-2c5abc73481c"
+                />
+                <PostCard 
+                  title="An intro to partials and helpers in Ruby on Rails"
+                  teaser="Reduce code repetition and improve separation of concerns by creating custom helper methods and partial templates"
+                  link="https://staceymck.medium.com/an-intro-to-partials-and-helpers-in-ruby-on-rails-10d62d85da24"
+                />
+              </PostsWrapper>
+              <div className="Center" id="PostsEnd">
+                  <LinkButton 
+                    text="View all"
+                    type="Secondary"
+                    link="https://staceymck.medium.com/"
+                    wide={true}
+                  />
+              </div>
+            </>
+          }
+          grayBg={false}
+        /> 
+
         <SectionWrapper 
           id="about"
           content={
@@ -138,7 +232,6 @@ const App = () => {
                   <p>
                     When I'm not at my computer, you'll likely find me painting, playing tennis, or browsing the shelves of the local library.
                   </p>
-
                   <h2>Technologies:</h2>
                   <BulletedList 
                     listItems={
@@ -154,101 +247,9 @@ const App = () => {
           } 
           grayBg={true}
         />
+      </main>
 
-      <SectionWrapper 
-        id="projects"
-        content={
-          <>
-            <h1>Projects</h1>
-            <CardWrapper>
-              {projects.map(project => {
-                return (
-                  <ProjectCard
-                    onClick={() => handleModalVisibility(project.id)}
-                    title={project.title}
-                    tech={project.tech}
-                    svgImg={project.svgImg}
-                    key={project.id}
-                  />
-                )
-              })}
-            </CardWrapper>
-          </>
-        }
-      />
-
-      {/* Project Modal */}
-      {modalVisibility && 
-        <Modal onModalClose={() => setModalVisibility(false)}> 
-          <ProjectPage 
-            title={activeProject.title}
-            tech={activeProject.tech}
-            img={activeProject.img}
-            alt={activeProject.alt}
-            description={activeProject.description}
-            highlightsList={
-              <BulletedList 
-                listItems={
-                  activeProject.techHighlights.map((highlight, i) => {
-                    return <li key={i}>{highlight}</li>
-                  })
-                }
-                listStyle="Modal"
-              />
-            }
-            linkBlock={
-              <LinkBlock>
-                {activeProject.links.map((link, i) => {
-                  return <LinkButton key={i} text={link.text} type="PrimaryInverse" link={link.link} />
-                })}
-              </LinkBlock>
-            }
-          />
-        </Modal>
-      }
-
-      <SectionWrapper 
-        id="posts"
-        content={
-          <>
-            <h1>Featured Posts</h1>
-            <PostsWrapper>
-              <PostCard 
-                title="4 tips for your first hackathon"
-                teaser="Top takeaways from my first hackathon experience to help you make the most of yours"
-                link="https://staceymck.medium.com/4-tips-for-your-first-hackathon-f9cbbc9c4096"
-              />
-              <PostCard 
-                title="Customizing React Color’s Sketch Picker to display recently used colors"
-                teaser="Learn how to utilize React state to create a palette-like experience for users working with a color picker"
-                link="https://staceymck.medium.com/customizing-react-colors-sketch-picker-to-display-recently-used-colors-b1eb09724ed6"
-              />
-              <PostCard 
-                title="Making an interactive SVG map with OO-JavaScript"
-                teaser="Walk through the process and logic involved in triggering actions based on user interaction with an SVG in a vanilla JavaScript context"
-                link="https://staceymck.medium.com/making-an-interactive-svg-map-with-oo-javascript-2c5abc73481c"
-              />
-              <PostCard 
-                title="An intro to partials and helpers in Ruby on Rails"
-                teaser="Reduce code repetition and improve separation of concerns by creating custom helper methods and partial templates"
-                link="https://staceymck.medium.com/an-intro-to-partials-and-helpers-in-ruby-on-rails-10d62d85da24"
-              />
-            </PostsWrapper>
-            <div className="Center">
-                <LinkButton 
-                  text="View all"
-                  type="Secondary"
-                  link="https://staceymck.medium.com/"
-                  wide={true}
-                />
-            </div>
-          </>
-        }
-        grayBg={true}
-      /> 
-    </main>
-
-    <Footer /> 
+      <Footer /> 
 
     </div>
   );
