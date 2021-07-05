@@ -1,4 +1,9 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
+
+.Cls1, .Cls2, .Cls3, .Cls4, .Cls5, .Cls6 {
+  transition: $color-transition;
+}
 
 .Cls1, .Cls4 {
   fill:#fff;
