@@ -45,8 +45,8 @@ const App = () => {
         "Built a Rails backend API with a PostgreSQL database to store and retrieve finished images"
       ],
       links: [
-        {text: "Live", link: "https://collab-color.netlify.app"},
-        {text: "Demo", link: "https://youtu.be/1vj96n49h8c"},
+        {text: "Live demo", link: "https://collab-color.netlify.app"},
+        {text: "Video demo", link: "https://youtu.be/1vj96n49h8c"},
         {text: "GitHub", link: "https://github.com/staceymck/collab-color"}
       ]
     }, 
@@ -65,7 +65,7 @@ const App = () => {
         "Developed partial templates for common elements like forms and error notifications to reduce code repetition"
       ],
       links: [
-        {text: "Demo", link: "https://youtu.be/degqCx92P_c"},
+        {text: "Video demo", link: "https://youtu.be/degqCx92P_c"},
         {text: "GitHub", link: "https://github.com/staceymck/volunteer-log"}
       ]
     },
@@ -83,7 +83,7 @@ const App = () => {
         "Used ActiveRecord scope methods and the gem Kaminari to enable sorting features and pagination for reviews"
       ],
       links: [
-        {text: "Demo", link: "https://youtu.be/oFuOIL-6_yo"},
+        {text: "Video demo", link: "https://youtu.be/oFuOIL-6_yo"},
         {text: "GitHub", link: "https://github.com/staceymck/stl-zoo-map-frontend"}
       ]
     }
