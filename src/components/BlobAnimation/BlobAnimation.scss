@@ -1,0 +1,32 @@
+// This SCSS file isn't a module like others in this directory because class names are added
+// to related JSON Lottie animation file prior to exporting in Adobe After Effects. 
+
+@import '../../styles/variables';
+
+.primary-fill {
+  fill: var(--primary-color);
+}
+
+.secondary-fill {
+  fill: var(--secondary-color);
+}
+
+.white-fill {
+  fill: #fff;
+}
+
+.white-stroke {
+  stroke: #fff;
+}
+
+.primary-stroke {
+  stroke: var(--primary-color);
+}
+
+.secondary-stroke {
+  stroke: var(--secondary-color);
+}
+
+.primary-fill, .secondary-fill, .primary-stroke, .secondary-stroke {
+  transition: $color-transition;
+}
