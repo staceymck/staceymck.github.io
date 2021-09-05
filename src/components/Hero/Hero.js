@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from '../ThemedSvg/Main';
+import BlobAnimation from '../BlobAnimation/BlobAnimation';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
         <h2>Hi! I'm Stacey McKnight, a web developer with a background in graphic design and marketing</h2>
       </div>
       <div className={styles.Right}>
-        <Main />
+        <BlobAnimation />
       </div>
     </div>
   )
