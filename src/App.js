@@ -233,6 +233,11 @@ const App = () => {
                 teaser="Reduce code repetition and improve separation of concerns by creating custom helper methods and partial templates"
                 link="https://staceymck.medium.com/an-intro-to-partials-and-helpers-in-ruby-on-rails-10d62d85da24"
               />
+              <PostCard
+                title="3 ways comms skills can make you a better developer"
+                teaser="Pick up tips and tools from the comms field to boost your day-to-day dev work"
+                link="https://medium.com/@staceymck/3-ways-comms-skills-can-make-you-a-better-developer-a31664354826"
+              />
             </PostsWrapper>
             <div className="Center">
                 <LinkButton 
