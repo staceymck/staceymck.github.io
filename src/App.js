@@ -91,13 +91,36 @@ const App = () => {
 
   const techSkills = [
     "Ruby", 
-    "JavaScript",
     "Ruby on Rails",
+    "Hotwire (Stimulus + Turbo)",
+    "JavaScript",
     "React + Redux",
-    "CSS + Sass",
+    "CSS + TailwindCSS",
+    "Sorbet",
+    "Flow",
+    "HAML + ERB",
+    "HTML5",
+    "Git"
+  ]
+
+  const devPlatforms = [
+    "GitHub",
+    "JIRA",
+    "CircleCI",
+    "Airbrake",
+    "HackerOne",
+    "Metabase",
+    "Postman",
+    "Confluence"
+  ]
+
+  const uxDesignTools = [
     "Figma",
     "Illustrator",
-    "InDesign"
+    "InDesign",
+    "Canny",
+    "Intercom",
+    "Amplitude"
   ]
 
   const handleClick = theme => {
@@ -139,15 +162,38 @@ const App = () => {
                     When I'm not at my computer, you'll likely find me painting, playing tennis, or browsing the shelves of the local library.
                   </p>
 
-                  <h2>Technologies:</h2>
-                  <BulletedList 
-                    listItems={
-                      techSkills.map((skill, i) => {
-                        return <li key={i}>{skill}</li>
-                      })
-                    }
-                    listStyle="Skill"
-                  />
+                  <h2>Skills and experience</h2>
+                  <div className="Skills">
+                    <h3>Languages, frameworks, libraries, and tools:</h3>
+                    <BulletedList 
+                      listItems={
+                        techSkills.map((skill, i) => {
+                          return <li key={i}>{skill}</li>
+                        })
+                      }
+                      listStyle="Skill"
+                    />
+
+                    <h3>Development platforms:</h3>
+                    <BulletedList 
+                      listItems={
+                        devPlatforms.map((skill, i) => {
+                          return <li key={i}>{skill}</li>
+                        })
+                      }
+                      listStyle="Skill"
+                    />
+
+                    <h3>User engagement and design:</h3>
+                    <BulletedList 
+                      listItems={
+                        uxDesignTools.map((skill, i) => {
+                          return <li key={i}>{skill}</li>
+                        })
+                      }
+                      listStyle="Skill"
+                    />
+                  </div>
                 </>
               }
             />
