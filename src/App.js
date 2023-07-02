@@ -151,15 +151,14 @@ const App = () => {
                     I started my career in the nonprofit field, where I became familiar with the concept of "wearing many hats". 
                     My roles spanned multiple disciplines, from design work to public relations. 
                     This exposure also introduced me to website design and the creative problem-solving involved
-                    in frontend development.
+                    in the tech field.
                   </p>
                   <p>
                     Development challenges sparked my interest and led me to dive into the nuts and bolts of creating dynamic web apps. 
-                    I decided to make the jump into development work full-time and kickstarted the transition with five months of 
-                    intensive training through Flatiron School's software engineering program.
+                    I made the jump into development full-time and now work across the stack at a SaaS company, primarily using Ruby and JavaScript.
                   </p>
                   <p>
-                    When I'm not at my computer, you'll likely find me painting, playing tennis, or browsing the shelves of the local library.
+                    When I'm not at my computer, you'll likely find me painting, bouldering, or walking around Chicago while listening to audiobooks.
                   </p>
 
                   <h2>Skills and experience</h2>
