@@ -2,18 +2,21 @@
 @import '../../styles/variables';
 
 .CardWrapper {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
   max-width: $width-main;
   margin: 1rem auto;
-  flex-wrap: wrap;
 }
 
 @include medium-screens {
+    .CardWrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@include large-screens {
   .CardWrapper {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
