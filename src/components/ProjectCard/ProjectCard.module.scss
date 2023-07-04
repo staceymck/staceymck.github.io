@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .ProjectCard {
-  flex: 1;
+  flex: 0 0 25%;
   margin: .5rem;
   padding: 1.25rem 1.25rem .5rem 1.25rem;
   width: 80%;
@@ -26,6 +26,11 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+img.Img {
+  width: 275px;
+  margin: 0 auto 1.5rem auto;
 }
 
 .Text {

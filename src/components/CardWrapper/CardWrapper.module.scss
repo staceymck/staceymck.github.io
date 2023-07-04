@@ -9,6 +9,7 @@
   flex-direction: column;
   max-width: $width-main;
   margin: 1rem auto;
+  flex-wrap: wrap;
 }
 
 @include medium-screens {

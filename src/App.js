@@ -10,6 +10,12 @@ import BulletedList from './components/BulletedList/BulletedList';
 import VolunteerImg from './assets/volunteer-log.png';
 import ColorImg from './assets/collab-color.png';
 import ZooImg from './assets/zoo-map.png';
+import EncryptImg from './assets/encrypt.png';
+import SwapShiftImg from './assets/shift-swap.png';
+import IntegrationImg from './assets/integration.png';
+import IntegrationThumb from './assets/integration-thumbnail.png';
+import ShiftSwapThumb from './assets/shift-swap-thumbnail.png';
+import EncryptThumb from './assets/encrypt-thumbnail.png';
 import Modal from './components/Modal/Modal';
 import Hero from './components/Hero/Hero';
 import SplitPane from './components/SplitPane/SplitPane';
@@ -32,6 +38,54 @@ const App = () => {
   const projects = [
     {
       id: 1,
+      title: "Shift Swap Mobile Rebuild",
+      tech: "Hotwire + Ruby on Rails",
+      img: SwapShiftImg,
+      thumbnail: ShiftSwapThumb,
+      alt: "Screenshot of a mobile app showing shifts available to pick up",
+      description: "The dev team was tasked with rebuilding a React Native mobile app in Ruby on Rails and Hotwire. I built out the features related to vacant shift claiming and shift swapping.",
+      techHighlights: [
+        "Developed a technical spec outlining the UI and functionality needed to achieve feature parity; used Figma to create mockups of screen layouts",
+        "Built new frontend views using Rails and Hotwire (Turbo + StimulusJS) that integrated with existing backend models",
+        "Styled the new views using TailwindCSS"
+      ],
+      links: []
+    },
+    {
+      id: 2,
+      title: "SFTP Encryption at Rest",
+      tech: "Ruby, Ruby on Rails",
+      img: EncryptImg,
+      thumbnail: EncryptThumb,
+      alt: "Screenshot of the settings for an SFTP importer",
+      description: "To add an extra layer of security to SFTP imports, I built a feature that lets clients store their data in an encrypted format while it is 'at rest' on their SFTP server. The data is then decrypted after being imported.",
+      techHighlights: [
+        "Created GPG key pairs for encrypting and decrypting data",
+        "Utilized a Ruby wrapper for the GPGME library to handle decryption and key management within a Rails-based app",
+        "Wrote regression tests using Minitest and performed QA using an external SFTP server",
+        "Developed a user-facing guide that walks clients through the technical steps of encrypting their data"
+      ],
+      links: [
+        {text: "User guide", link: "https://help.workforce.com/en/articles/7861361-encryption-at-rest-for-sftp-imports"},
+      ]
+    },
+    {
+      id: 3,
+      title: "Payroll Integration - Staff Importer",
+      tech: "Ruby, Ruby on Rails",
+      img: IntegrationImg,
+      thumbnail: IntegrationThumb,
+      alt: "Screenshot of the settings for a payroll integration",
+      description: "As part of onboarding for a new junior developer, I paired with them to create a feature that lets clients import staff data from a third-party payroll system.",
+      techHighlights: [
+        "Used Postman, third-party API docs, and a sandbox environment to develop and QA the integration",
+        "Wrote a comprehensive test suite that used WebMock to stub external HTTP requests",
+        "Mentored a junior team member through code review, pairing sessions, and ad hoc troubleshooting"
+      ],
+      links: []
+    },
+    {
+      id: 4,
       title: "Collab Color",
       tech: "React + Rails API",
       svgImg: <Color />,
@@ -45,13 +99,12 @@ const App = () => {
         "Built a Rails backend API with a PostgreSQL database to store and retrieve finished images"
       ],
       links: [
-        {text: "Live demo", link: "https://collab-color.netlify.app"},
         {text: "Video demo", link: "https://youtu.be/1vj96n49h8c"},
         {text: "GitHub", link: "https://github.com/staceymck/collab-color"}
       ]
     }, 
     {
-      id: 2,
+      id: 5,
       title: "VolunteerLog",
       tech: "Ruby on Rails",
       svgImg: <Volunteer />,
@@ -70,7 +123,7 @@ const App = () => {
       ]
     },
     {
-      id: 3,
+      id: 6,
       title: "STL Zoo Map",
       tech: "JavaScript + Rails API",
       svgImg: <Zoo />,
@@ -213,6 +266,8 @@ const App = () => {
                     title={project.title}
                     tech={project.tech}
                     svgImg={project.svgImg}
+                    alt={project.alt}
+                    thumbnail={project.thumbnail}
                     key={project.id}
                   />
                 )
@@ -229,6 +284,7 @@ const App = () => {
             title={activeProject.title}
             tech={activeProject.tech}
             img={activeProject.img}
+            thumbnail={activeProject.thumbnail}
             alt={activeProject.alt}
             description={activeProject.description}
             highlightsList={
