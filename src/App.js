@@ -76,7 +76,7 @@ const App = () => {
       img: IntegrationImg,
       thumbnail: IntegrationThumb,
       alt: "Screenshot of the settings for a payroll integration",
-      description: "As part of onboarding for a new junior developer, I paired with them to create a feature that lets clients import staff data from a third-party payroll system.",
+      description: "As part of onboarding for a new junior developer, I paired with them to build a new API integration that lets clients import staff data from a third-party payroll system.",
       techHighlights: [
         "Used Postman, third-party API docs, and a sandbox environment to develop and QA the integration",
         "Wrote a comprehensive test suite that used WebMock to stub external HTTP requests",
